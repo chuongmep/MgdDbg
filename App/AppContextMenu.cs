@@ -65,8 +65,7 @@ namespace MgdDbg
 		{
 			m_appMenu = new ContextMenuExtension();
 			m_appMenu.Title = "MgdDbg";
-
-            m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Entities...", "MgdDbgSnoopEnts"));
+			m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Entities...", "MgdDbgSnoopEnts"));
             m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Entities (nested)...", "MgdDbgSnoopNEnts"));
             m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop (by Handle)...", "MgdDbgSnoopByHandle"));
             m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Database...", "MgdDbgSnoopDb"));

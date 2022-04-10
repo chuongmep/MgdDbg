@@ -46,7 +46,7 @@ namespace MgdDbg
 		{
             Utils.AcadUi.PrintToCmdLine("\nLoading MgdDbg...");
             
-                // register any Snoop Collector Extension objects that we have
+                // register any Snoop Collector Extension  objectsthat we have
             Snoop.CollectorExts.Object extObj = new Snoop.CollectorExts.Object();
             Snoop.CollectorExts.RxObject extRxObj = new Snoop.CollectorExts.RxObject();
             Snoop.CollectorExts.DbObject extObjects = new Snoop.CollectorExts.DbObject();
