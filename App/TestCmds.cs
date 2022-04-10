@@ -86,7 +86,7 @@ namespace MgdDbg.Test
         }
 	       
         //[CommandMethod("MgdDbg", "MgdDbgSnoopEnts", "SnoopEnts", CommandFlags.Modal)]       
-        [CommandMethod("MgdDbgSnoopEnts", CommandFlags.Modal)]
+        [CommandMethod("SnoopEnts", CommandFlags.Modal)]
 
         public void
         SnoopEntity()
@@ -111,7 +111,7 @@ namespace MgdDbg.Test
         }
 
         //[CommandMethod("MgdDbg", "MgdDbgSnoopNEnts", "SnoopNEnts", CommandFlags.Modal)]       
-        [CommandMethod("MgdDbgSnoopNEnts", CommandFlags.Modal)]
+        [CommandMethod("SnoopNEnts", CommandFlags.Modal)]
 
         public void
         SnoopNestedEntity ()
@@ -145,10 +145,9 @@ namespace MgdDbg.Test
         }
 
         //[CommandMethod("MgdDbg", "MgdDbgSnoopByHandle", "SnoopEnts", CommandFlags.Modal)]       
-        [CommandMethod("MgdDbgSnoopByHandle", CommandFlags.Modal)]
+        [CommandMethod("SnoopByHandle", CommandFlags.Modal)]
 
-        public void
-        SnoopEntityByHandle ()
+        public void SnoopEntityByHandle ()
         {
             ObjectId id = ObjectId.Null;           
             ObjectIdCollection selSet = new ObjectIdCollection();
@@ -187,7 +186,7 @@ namespace MgdDbg.Test
         
         
         //[CommandMethod("MgdDbg", "MgdDbgSnoopDb", "SnoopDb", CommandFlags.Modal)]
-        [CommandMethod("MgdDbgSnoopDb", CommandFlags.Modal)]
+        [CommandMethod("SnoopDB", CommandFlags.Modal)]
         
         public void
         SnoopDatabase()
@@ -206,7 +205,7 @@ namespace MgdDbg.Test
         }
         
         //[CommandMethod("MgdDbg", "MgdDbgSnoopEd", "SnoopEd", CommandFlags.Modal)]
-        [CommandMethod("MgdDbgSnoopEd", CommandFlags.Modal)]
+        [CommandMethod("SnoopEd", CommandFlags.Modal)]
 
         public void
         SnoopEd()
@@ -216,7 +215,7 @@ namespace MgdDbg.Test
         }
 
         //[CommandMethod("MgdDbg", "MgdDbgEvents", "Reactors", CommandFlags.Modal)]
-        [CommandMethod("MgdDbgEvents", CommandFlags.Modal)]
+        [CommandMethod("SnoopEvents", CommandFlags.Modal)]
 
         public void
         Events()
@@ -226,10 +225,9 @@ namespace MgdDbg.Test
         }                               
         
         //[CommandMethod("MgdDbg", "MgdDbgTests", "Tests", CommandFlags.Modal)]
-        [CommandMethod("MgdDbgTests", CommandFlags.Modal)]
+        [CommandMethod("SnoopTests", CommandFlags.Modal)]
         
-        public void
-        TestDb()
+        public void TestDb()
         {
             MgdDbg.Test.TestForm dbox = new MgdDbg.Test.TestForm(MgdDbgTestFuncs.RegisteredTestFuncs());
             if (AcadApp.ShowModalDialog(dbox) == DialogResult.OK)
@@ -237,7 +235,7 @@ namespace MgdDbg.Test
         }       
         
         //[CommandMethod("MgdDbg", "MgdDbgTestTabForm", "TestTabForm", CommandFlags.Modal)]
-        [CommandMethod("MgdDbgTestTabForm", CommandFlags.Modal)]
+        [CommandMethod("SnoopTestTabForm", CommandFlags.Modal)]
         
         public void
         TestTabForm()

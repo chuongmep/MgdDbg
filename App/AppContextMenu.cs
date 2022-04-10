@@ -65,15 +65,15 @@ namespace MgdDbg
 		{
 			m_appMenu = new ContextMenuExtension();
 			m_appMenu.Title = "MgdDbg";
-			m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Entities...", "MgdDbgSnoopEnts"));
-            m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Entities (nested)...", "MgdDbgSnoopNEnts"));
-            m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop (by Handle)...", "MgdDbgSnoopByHandle"));
-            m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Database...", "MgdDbgSnoopDb"));
-            m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Editor...", "MgdDbgSnoopEd"));
+			m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Entities...", "SnoopEnts"));
+            m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Entities (nested)...", "SnoopNEnts"));
+            m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop (by Handle)...", "SnoopByHandle"));
+            m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Database...", "SnoopDB"));
+            m_appMenu.MenuItems.Add(new AppContextMenuItem("Snoop Editor...", "SnoopEd"));
             m_appMenu.MenuItems.Add(new MenuItem(""));    // separator
-            m_appMenu.MenuItems.Add(new AppContextMenuItem("Events...", "MgdDbgEvents"));
+            m_appMenu.MenuItems.Add(new AppContextMenuItem("Events...", "SnoopEvents"));
             m_appMenu.MenuItems.Add(new MenuItem(""));    // separator
-            m_appMenu.MenuItems.Add(new AppContextMenuItem("Test Framework...", "MgdDbgTests"));                               
+            m_appMenu.MenuItems.Add(new AppContextMenuItem("Test Framework...", "SnoopTests"));                               
 		    
 		    foreach (MenuItem mnuItem in m_appMenu.MenuItems) {
 		        AppContextMenuItem appContextMnuItem = mnuItem as AppContextMenuItem;
