@@ -493,7 +493,9 @@ namespace MgdDbg.Snoop.CollectorExts {
             data.Add(new Snoop.Data.ClassSeparator(typeof(Polyline)));
 
             data.Add(new Snoop.Data.Bool("Closed", pline.Closed));
-            data.Add(new Snoop.Data.Distance("Constant width", pline.ConstantWidth));
+            if (pline.Handle.Value!=859)
+            {
+                data.Add(new Snoop.Data.Distance("Constant width", pline.ConstantWidth));
             }
             data.Add(new Snoop.Data.Distance("Elevation", pline.Elevation));
             data.Add(new Snoop.Data.Bool("Has bulges", pline.HasBulges));
