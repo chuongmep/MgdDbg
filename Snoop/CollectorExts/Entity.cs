@@ -494,6 +494,7 @@ namespace MgdDbg.Snoop.CollectorExts {
 
             data.Add(new Snoop.Data.Bool("Closed", pline.Closed));
             data.Add(new Snoop.Data.Distance("Constant width", pline.ConstantWidth));
+            }
             data.Add(new Snoop.Data.Distance("Elevation", pline.Elevation));
             data.Add(new Snoop.Data.Bool("Has bulges", pline.HasBulges));
             data.Add(new Snoop.Data.Bool("Has width", pline.HasWidth));
