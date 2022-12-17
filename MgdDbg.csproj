@@ -98,7 +98,10 @@
 		</BootstrapperPackage>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="AutoCAD.NET" Version="24.0.0" />
+	  <PackageReference Include="Chuongmep.Acad.Api.accoremgd" Version="2023.0.2" />
+	  <PackageReference Include="Chuongmep.Acad.Api.acdbmgd" Version="2023.0.2" />
+	  <PackageReference Include="Chuongmep.Acad.Api.acmgd" Version="2023.0.2" />
+	  <PackageReference Include="Chuongmep.Acad.Api.AdWindows" Version="2023.0.2" />
 	</ItemGroup>
 	<PropertyGroup />
 </Project>
